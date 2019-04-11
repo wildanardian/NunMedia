@@ -31,13 +31,12 @@
         android:layout_height="220dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:layout_below="@id/line1">
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/pict1"
-            android:alpha=".80"/>
+            android:src="@drawable/pict1"/>
         <TextView
             android:layout_width="250dp"
             android:layout_height="wrap_content"
@@ -57,15 +56,157 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:layout_below="@id/line2">
         <android.support.v7.widget.CardView
             android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_height="95dp"
             android:layout_marginLeft="20dp">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/blogging"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Artikel"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="#000"
+                    android:textAlignment="center"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="95dp"
+            android:layout_marginLeft="34dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/library"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kitab"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="#000"
+                    android:textAlignment="center"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="95dp"
+            android:layout_marginLeft="34dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/chat"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chat"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="#000"
+                    android:textAlignment="center"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lineMenu2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lineMenu1"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="95dp"
+            android:layout_marginLeft="20dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/podcast" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="Podcast"
+                    android:textAlignment="center"
+                    android:textColor="#000" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="95dp"
+            android:layout_marginLeft="34dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/team" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="About"
+                    android:textAlignment="center"
+                    android:textColor="#000" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="95dp"
+            android:layout_marginLeft="34dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/gallery" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="Galeri"
+                    android:textAlignment="center"
+                    android:textColor="#000" />
+            </RelativeLayout>
         </android.support.v7.widget.CardView>
     </LinearLayout>
 
@@ -74,13 +215,13 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_marginLeft="175dp"
-        android:layout_marginBottom="30dp"
-        app:fabCustomSize="70dp"
+        android:layout_marginBottom="25dp"
+        app:fabCustomSize="60dp"
         android:backgroundTint="#4CAF50"
         android:src="@drawable/add"/>
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="75dp"
+        android:layout_height="60dp"
         android:layout_alignParentBottom="true">
         <LinearLayout
             android:layout_width="match_parent"
@@ -89,13 +230,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="5dp">
+                android:layout_marginLeft="50dp">
                 <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/home"
-                    android:padding="5dp"/>
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/homeoutline"
+                    android:padding="5dp"
+                    android:layout_marginLeft="7dp"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -106,13 +247,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:layout_marginLeft="210dp"
-                android:layout_marginTop="5dp">
+                android:layout_marginLeft="210dp">
                 <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:src="@drawable/userbaru"
-                    android:padding="5dp"/>
+                    android:padding="5dp"
+                    android:layout_marginLeft="7dp"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
