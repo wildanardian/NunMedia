@@ -22,11 +22,19 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="WILDAN ARDIAN"
+            android:text="WILDAN ARDIAN ALAMSYAH"
             android:textColor="#fff"
             android:textAlignment="center"
             android:textSize="20sp"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KELAS 1"
+            android:textColor="#fff"
+            android:textAlignment="center"
+            android:textSize="20sp"/>
     </LinearLayout>
 
     <android.support.v7.widget.CardView
@@ -48,20 +56,13 @@
                 android:padding="10dp"
                 android:layout_marginLeft="10dp" />
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="example@email.com"
                 android:textSize="20sp"
                 android:gravity="center_vertical"
                 android:layout_toEndOf="@id/imageEmail"
                 android:layout_marginLeft="10dp"/>
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:src="@drawable/pencil"
-                android:padding="12dp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginRight="10dp"/>
         </RelativeLayout>
     </android.support.v7.widget.CardView>
     <android.support.v7.widget.CardView
@@ -83,20 +84,14 @@
                 android:padding="10dp"
                 android:layout_marginLeft="10dp" />
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="0812 3456 7890"
                 android:textSize="20sp"
                 android:gravity="center_vertical"
                 android:layout_toEndOf="@id/imagePhone"
                 android:layout_marginLeft="10dp"/>
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:src="@drawable/pencil"
-                android:padding="12dp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginRight="10dp"/>
+
         </RelativeLayout>
     </android.support.v7.widget.CardView>
 
@@ -119,21 +114,104 @@
                 android:padding="10dp"
                 android:layout_marginLeft="10dp" />
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="Malang"
                 android:textSize="20sp"
                 android:gravity="center_vertical"
                 android:layout_toEndOf="@id/imageCity"
                 android:layout_marginLeft="10dp"/>
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:src="@drawable/pencil"
-                android:padding="12dp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginRight="10dp"/>
+
         </RelativeLayout>
     </android.support.v7.widget.CardView>
 
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardGender"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/cardCity"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/imageGender"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/sex"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Laki-Laki"
+                android:textSize="20sp"
+                android:gravity="center_vertical"
+                android:layout_toEndOf="@id/imageGender"
+                android:layout_marginLeft="10dp"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="175dp"
+        android:layout_marginBottom="25dp"
+        app:fabCustomSize="60dp"
+        android:backgroundTint="#F44336"
+        android:src="@drawable/logout"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/round_bottom_navbar_menu">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="50dp">
+                <ImageView
+                    android:id="@+id/imageHome1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/homeoutline"
+                    android:padding="5dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home"
+                    android:layout_marginLeft="2dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="210dp">
+                <ImageView
+                    android:id="@+id/imageProfile"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/userbaru"
+                    android:padding="5dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile"
+                    android:layout_marginLeft="3dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
 </RelativeLayout>
